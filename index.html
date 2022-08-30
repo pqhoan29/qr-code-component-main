@@ -24,13 +24,27 @@
                 color: hsl(228, 45%, 44%);
             }
 
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            .screen-bg {
+                background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+                padding: 20px;
+            }
+
             .background {
                 width: 1440px;
-                height: 100vh;
+                height: 94vh;
+                display: flex;
+                justify-content: center;
                 background-color: hsl(212, 45%, 89%);
                 margin: 0 auto;
                 position: relative;
                 box-shadow: 5px 10px 60px -10px grey;
+                border-radius: 25px;
             }
 
             .container {
@@ -78,23 +92,24 @@
         </style>
     </head>
     <body>
-        <div class="background">
-            <div class="container">
-                <img
-                    src="./images/image-qr-code.png"
-                    alt="QR-code picture"
-                    class="qr-pic"
-                />
-                <h1 class="fontstyle">
-                    Improve your front-end skills by building projects
-                </h1>
-                <p class="fontstyle">
-                    Scan the QR code to visit Frontend Mentor and take your
-                    coding skills to the next level
-                </p>
+        <div class="screen-bg">
+            <div class="background">
+                <div class="container">
+                    <img
+                        src="./images/image-qr-code.png"
+                        alt="QR-code picture"
+                        class="qr-pic"
+                    />
+                    <h1 class="fontstyle">
+                        Improve your front-end skills by building projects
+                    </h1>
+                    <p class="fontstyle">
+                        Scan the QR code to visit Frontend Mentor and take your
+                        coding skills to the next level
+                    </p>
+                </div>
             </div>
         </div>
-
         <div class="attribution">
             Challenge by
             <a
